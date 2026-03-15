@@ -2503,10 +2503,12 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			font-size: 20pt;
 		}
 
 		.icon > .label {
 			display: none;
+			
 		}
 
 		.icon:before {
@@ -2531,6 +2533,7 @@ input, select, textarea {
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
+			
 		}
 
 			.icon.major:before {
