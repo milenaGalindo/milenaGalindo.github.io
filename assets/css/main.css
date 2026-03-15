@@ -3304,12 +3304,12 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper.fullscreen {
-					min-height: calc(100vh - 2.5em);
-					width: 200%;
+					padding: 2em 0;
+					min-height: 0;
 				}
 
 					body.is-ie .wrapper.fullscreen {
-						height: calc(100vh - 2.5em);	
+						height: auto;
 					}
 
 			}
@@ -3863,7 +3863,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #32652b;
 						}
 
 		}
@@ -3883,7 +3883,7 @@ input, select, textarea {
 		background-image: url("images/ROJA_Concept_DQ5v2op1.png");		
 		background-position: top left;
 		background-repeat: no-repeat;
-		background-size: 100%	 100% ;	
+		background-size: 100% 100% ;	
 
 	}
 
@@ -3903,7 +3903,6 @@ input, select, textarea {
 
 				#intro p {
 					font-size: 1em;
-					
 				}
 
 			}
@@ -3911,9 +3910,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#intro {
-				background-position: top right;
 				background-attachment: scroll;
-				
 			}
 
 		}
