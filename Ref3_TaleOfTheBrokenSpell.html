@@ -14,94 +14,127 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Danna Quimbay</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html#three">Contacto</a></li>
-						<li><a href="Ref2_PenguinPanic.html" class="active">Más Reciente</a></li>
-						<li><a>Más Antiguo</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Danna Quimbay</a>
+			<nav>
+				<ul>
+					<li><a href="index.html" data-key="nav_home">Inicio</a></li>
+					<li><a href="index.html#three" data-key="nav_contact">Contacto</a></li>
+					<li><a href="Ref2_PenguinPanic.html" class="active" data-key="nav_newest">Más Reciente</a></li>
+					<li><a data-key="nav_oldest">Más Antiguo</a></li>
+					<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">The Tale of the Broken Spell</h1>
-							<span class="image fit"><img src="images/Templo_Concept.png" alt="" /></span>
-							<section class="inner">
-								<ul class="actions fit" >
-									<li><a href="https://mayvidev.itch.io/the-tale-of-the-broken-spell" download="QuimbayDanna_CV_2026v2" class="button">Ver en Itch.io</a></li>
-								</ul>
-							</section>	
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/TempName_TA_Extras1_v2.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/TempName_TA_Castillo_v1.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/TempName_TA_Ruina_v1.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/TempName_TA_Templo_v1.png" alt="" /></span></div>
-											
-										</div>									
-								</div>
-								<div class="col-8 col-12-medium">
-									
-									<blockquote>"El tiempo no es lineal, sino un espiral que se retuerce sobre sí misma..."</blockquote>
-									<p>
-										En este sidescroller plataformero controlaras a una joven maga, quien encuentra un antiguo grimorio de hechizos que le dará el poder para viajar en el tiempo.
-										Por desgracia el hechizo está incompleto y cada vez que lo usa es transportada a versiones alternas de su realidad.
-										La maga debe viajar entre estas realidades paralelas y recolectar las páginas faltantes del grimorio para así completar el hechizo y escapar de este bucle espacio-temporal. </p>
-									<p>
-										Assets diseñados en Photosohop y Krita. Desarrollado colaborativamente en el marco de la Women Game Jam 2024.
-									</p>
-								</div>	
-							</div>
-							<p>	</p>		
-							<div class="row box">
-								<div class="col-5 col-12-medium">
-									<h3>Mis Roles:</h3>
-									<ul>
-										<li>Asset Artist</li>
-										<li>Concept Artist</li>
-									</ul>								
-								</div>
-								<div class="col-7 col-12-medium">
-									<h3>Tareas Específicas:</h3>
-									<ul>
-										<li>Diseño de conept art, aplicando assets finales para definir principios de diseño de nivel</li>
-										<li>Diseño de 100+ assets modulares tipo PixelArt para implementación en Unity</li>
-										<li>Organización de atlas de texturas</li>
-									</ul>								
-								</div>
-							</div>	
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+		<div id="wrapper">
+			<section id="main" class="wrapper">
 				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					<h1 class="major">The Tale of the Broken Spell</h1>
+					<span class="image fit"><img src="images/Templo_Concept.png" alt="" /></span>
+					<section class="inner">
+						<ul class="actions fit">
+							<li><a href="https://mayvidev.itch.io/the-tale-of-the-broken-spell" class="button" data-key="view_itch">Ver en Itch.io</a></li>
+						</ul>
+					</section>	
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<div class="row gtr-uniform">
+								<div class="col-12"><span class="image fit"><a href="images/TempName_TA_Extras1_v2.png"><img src="images/TempName_TA_Extras1_v2.png" alt="" /></a></span></div>
+								<div class="col-4"><span class="image fit"><a href="images/TempName_TA_Castillo_v1.png"><img src="images/TempName_TA_Castillo_v1.png" alt="" /></a></span></div>
+								<div class="col-4"><span class="image fit"><a href="images/TempName_TA_Ruina_v1.png"><img src="images/TempName_TA_Ruina_v1.png" alt="" /></a></span></div>
+								<div class="col-4"><span class="image fit"><a href="images/TempName_TA_Templo_v1.png"><img src="images/TempName_TA_Templo_v1.png" alt="" /></a></span></div>										
+							</div>									
+						</div>
+						<div class="col-8 col-12-medium">
+							<blockquote data-key="spell_quote">"El tiempo no es lineal, sino un espiral que se retuerce sobre sí misma..."</blockquote>
+							<p data-key="spell_desc1">En este sidescroller plataformero controlaras a una joven maga, quien encuentra un antiguo grimorio de hechizos que le dará el poder para viajar en el tiempo. Por desgracia el hechizo está incompleto y cada vez que lo usa es transportada a versiones alternas de su realidad. La maga debe viajar entre estas realidades paralelas y recolectar las páginas faltantes del grimorio para así completar el hechizo y escapar de este bucle espacio-temporal.</p>
+							<p data-key="spell_desc2">Assets diseñados en Photoshop y Krita. Desarrollado colaborativamente en el marco de la Women Game Jam 2024.</p>
+						</div>	
+					</div>
+					<p></p>		
+					<div class="row box">
+						<div class="col-5 col-12-medium">
+							<h3 data-key="my_roles">Mis Roles:</h3>
+							<ul>
+								<li data-key="role_asset">Asset Artist</li>
+								<li data-key="role_concept">Concept Artist</li>
+							</ul>								
+						</div>
+						<div class="col-7 col-12-medium">
+							<h3 data-key="specific_tasks">Tareas Específicas:</h3>
+							<ul>
+								<li data-key="spell_task1">Diseño de concept art, aplicando assets finales para definir principios de diseño de nivel</li>
+								<li data-key="spell_task2">Diseño de 100+ assets modulares tipo PixelArt para implementación en Unity</li>
+								<li data-key="spell_task3">Organización de atlas de texturas</li>
+							</ul>								
+						</div>
+					</div>	
 				</div>
-			</footer>
+			</section>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const translations = {
+				es: {
+					nav_home: "Inicio", nav_contact: "Contacto", nav_newest: "Más Reciente", nav_oldest: "Más Antiguo",
+					view_itch: "Ver en Itch.io",
+					spell_quote: "El tiempo no es lineal, sino un espiral que se retuerce sobre sí misma...",
+					spell_desc1: "En este sidescroller plataformero controlaras a una joven maga, quien encuentra un antiguo grimorio de hechizos que le dará el poder para viajar en el tiempo. Por desgracia el hechizo está incompleto y cada vez que lo usa es transportada a versiones alternas de su realidad. La maga debe viajar entre estas realidades paralelas y recolectar las páginas faltantes del grimorio para así completar el hechizo y escapar de este bucle espacio-temporal.",
+					spell_desc2: "Assets diseñados en Photoshop y Krita. Desarrollado colaborativamente en el marco de la Women Game Jam 2024.",
+					my_roles: "Mis Roles:", specific_tasks: "Tareas Específicas:",
+					role_asset: "Asset Artist", role_concept: "Concept Artist",
+					spell_task1: "Diseño de concept art, aplicando assets finales para definir principios de diseño de nivel", spell_task2: "Diseño de 100+ assets modulares tipo PixelArt para implementación en Unity", spell_task3: "Organización de atlas de texturas"
+				},
+				en: {
+					nav_home: "Home", nav_contact: "Contact", nav_newest: "Newer", nav_oldest: "Older",
+					view_itch: "View on Itch.io",
+					spell_quote: "Time is not linear, but a spiral that twists upon itself...",
+					spell_desc1: "In this side-scrolling platformer, you control a young mage who finds an ancient spellbook that gives her the power to travel through time. Unfortunately, the spell is incomplete and every time she uses it, she is transported to alternate versions of her reality. The mage must travel between these parallel realities and collect the missing pages of the spellbook to complete the spell and escape this space-time loop.",
+					spell_desc2: "Assets designed in Photoshop and Krita. Collaboratively developed as part of the Women Game Jam 2024.",
+					my_roles: "My Roles:", specific_tasks: "Specific Tasks:",
+					role_asset: "Asset Artist", role_concept: "Concept Artist",
+					spell_task1: "Concept art design, applying final assets to define level design principles", spell_task2: "Design of 100+ modular PixelArt assets for Unity implementation", spell_task3: "Texture atlas organization"
+				}
+			};
+
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function applyLanguage() {
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						el.innerText = translations[currentLang][key];
+					}
+				});
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+			}
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				applyLanguage();
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				applyLanguage();
+			});
+		</script>
 	</body>
 </html>

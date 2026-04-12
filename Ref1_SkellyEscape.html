@@ -19,10 +19,11 @@
 				<a href="index.html" class="title">Danna Quimbay</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html#three">Contacto</a></li>
-						<li><a href="Ref4_iHaveNoEnemies.html" class="active">Más Reciente</a></li>
-						<li><a href="Ref2_PenguinPanic.html" class="active">Más Antiguo</a></li>
+						<li><a href="index.html" data-key="nav_home">Inicio</a></li>
+						<li><a href="index.html#three" data-key="nav_contact">Contacto</a></li>
+						<li><a href="Ref4_iHaveNoEnemies.html" class="active" data-key="nav_newest">Más Reciente</a></li>
+						<li><a href="Ref2_PenguinPanic.html" class="active" data-key="nav_oldest">Más Antiguo</a></li>
+						<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
 					</ul>
 				</nav>
 			</header>
@@ -36,64 +37,50 @@
 							<h1 class="major">Skelly Escape</h1>
 							<span class="image fit"><img src="images/Screenshoot1.png" alt="" /></span>
 							<section class="inner">
-								<ul class="actions fit" >
-									<li><a href="https://alexvalero.itch.io/skelly-scape" download="QuimbayDanna_CV_2026v2" class="button">Ver en Itch.io</a></li>
+								<ul class="actions fit">
+									<li><a href="https://alexvalero.itch.io/skelly-scape" class="button" data-key="view_itch">Ver en Itch.io</a></li>
 								</ul>
 							</section>
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<div class="row gtr-uniform">
-										<video class="col-12" controls width="600"><source src="videos/2026-03-11 14-35-10.mp4" alt="" type="video/mp4"/></video>
-										<div class="col-12"><span class="image fit"><img src="images/Caratula.png" alt="" /></span></div>
-										<div class="col-12"><span class="image fit"><img src="images/Screenshoot 2.png" alt="" /></span></div>
-	
+										<video class="col-12" controls width="600"><source src="videos/SkellyEscape_video1.mp4" type="video/mp4"/></video>
+										<div class="col-12"><span class="image fit"><a href="images/Caratula.png"><img src="images/Caratula.png" alt="" /></a></span></div>
+										<div class="col-12"><span class="image fit"><a href="images/Screenshoot 2.png"><img src="images/Screenshoot 2.png" alt="" /></a></span></div>
 									</div>
 								</div>	
 
 								<div class="col-8 col-12-medium">
-									<blockquote>Tu objetivo es simple:
-
-									Alcanza las puertas de la ciudad y escapa del reino de Firekite, haciendo uso de tu ingenio y el cobijo de la noche.</blockquote>
-
-									Skelly Scape es un juego de Escape Room en tercera persona centrado en la exploración, la estrategia y la toma de decisiones sobre un esqueleto
-									prófugo que administra su inventario para escapar de la ciudad. En esta aventura encarnarás a Oswald Von Henrich —o más bien, lo que queda de él—,
-									un no-muerto que escapó de las mazmorras del reino de Firekite y ahora busca recobrar la libertad que perdió en vida. </p>
-									<p> Deberás atravesar un territorio lleno de trampas, torres de vigilancia y obstáculos mientras buscas herramientas y mejoras que te ayuden a sobrevivir tu huida.
-									Pero cuidado: no tienes mucho músculo, por lo tanto solo podrás cargar unos cuantos objetos la vez.
-									Cada objeto podría ser la diferencia entre volver a la mazmorra, o ver un nuevo amanecer fuera de la ciudad.
-									Gestiona con cuidado el espacio, y procura recordar donde dejas tiradas las cosas; puede que las vuelvas a necesitar.
-									</p>
-									<p>
-										Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Limited Capacity. Desarrollo activo. 
-									</p>
-
+									<blockquote data-key="skelly_quote">Tu objetivo es simple: Alcanza las puertas de la ciudad y escapa del reino de Firekite, haciendo uso de tu ingenio y el cobijo de la noche.</blockquote>
+									<p data-key="skelly_desc1">Skelly Scape es un juego de Escape Room en tercera persona centrado en la exploración, la estrategia y la toma de decisiones sobre un esqueleto prófugo que administra su inventario para escapar de la ciudad. En esta aventura encarnarás a Oswald Von Henrich —o más bien, lo que queda de él—, un no-muerto que escapó de las mazmorras del reino de Firekite y ahora busca recobrar la libertad que perdió en vida.</p>
+									<p data-key="skelly_desc2">Deberás atravesar un territorio lleno de trampas, torres de vigilancia y obstáculos mientras buscas herramientas y mejoras que te ayuden a sobrevivir tu huida. Pero cuidado: no tienes mucho músculo, por lo tanto solo podrás cargar unos cuantos objetos la vez. Cada objeto podría ser la diferencia entre volver a la mazmorra, o ver un nuevo amanecer fuera de la ciudad. Gestiona con cuidado el espacio, y procura recordar donde dejas tiradas las cosas; puede que las vuelvas a necesitar.</p>
+									<p data-key="skelly_desc3">Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Limited Capacity. Desarrollo activo.</p>
 								</div>
-								
 							</div>
-							<p>	</p>
-							<div class="row">
+							<p></p>
+							<div class="row box">
 								<div class="col-5 col-12-medium">
-									<h3>Mis Roles:</h3>
+									<h3 data-key="my_roles">Mis Roles:</h3>
 									<ul>
-										<li>Team Lead</li>
-										<li>Gameplay Developer</li>
-										<li>Technical Artist/Animator</li>
-										<li>UI/UX</li>
+										<li data-key="role_pm">Project Manager</li>
+										<li data-key="role_sm">Scrum Master</li>
+										<li data-key="role_gp">Gameplay Developer</li>
+										<li data-key="role_ta">Technical Artist/Animator</li>
+										<li data-key="role_ui">UI/UX</li>
 									</ul>								
 								</div>
 								<div class="col-7 col-12-medium">
-									<h3>Tareas Específicas:</h3>
+									<h3 data-key="specific_tasks">Tareas Específicas:</h3>
 									<ul>
-										<li>Sistema de Audio Manager</li>
-										<li>Sistema de inventario dinámico</li>
-										<li>Diseño e implementación de menús (Inicio y Pausa) e inventario</li>
-										<li>Pipeline de Post Procesamiento</li>
+										<li data-key="skelly_task1">Sistema de Audio Manager</li>
+										<li data-key="skelly_task2">Sistema de inventario dinámico</li>
+										<li data-key="skelly_task3">Diseño e implementación de menús (Inicio y Pausa) e inventario</li>
+										<li data-key="skelly_task4">Pipeline de Post Procesamiento</li>
 									</ul>								
 								</div>
 							</div>								
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
@@ -114,5 +101,53 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<script>
+			const translations = {
+				es: {
+					nav_home: "Inicio", nav_contact: "Contacto", nav_newest: "Más Reciente", nav_oldest: "Más Antiguo",
+					view_itch: "Ver en Itch.io",
+					skelly_quote: "Tu objetivo es simple: Alcanza las puertas de la ciudad y escapa del reino de Firekite, haciendo uso de tu ingenio y el cobijo de la noche.",
+					skelly_desc1: "Skelly Scape es un juego de Escape Room en tercera persona centrado en la exploración, la estrategia y la toma de decisiones sobre un esqueleto prófugo que administra su inventario para escapar de la ciudad. En esta aventura encarnarás a Oswald Von Henrich —o más bien, lo que queda de él—, un no-muerto que escapó de las mazmorras del reino de Firekite y ahora busca recobrar la libertad que perdió en vida.",
+					skelly_desc2: "Deberás atravesar un territorio lleno de trampas, torres de vigilancia y obstáculos mientras buscas herramientas y mejoras que te ayuden a sobrevivir tu huida. Pero cuidado: no tienes mucho músculo, por lo tanto solo podrás cargar unos cuantos objetos la vez. Cada objeto podría ser la diferencia entre volver a la mazmorra, o ver un nuevo amanecer fuera de la ciudad. Gestiona con cuidado el espacio, y procura recordar donde dejas tiradas las cosas; puede que las vuelvas a necesitar.",
+					skelly_desc3: "Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Limited Capacity. Desarrollo activo.",
+					my_roles: "Mis Roles:", specific_tasks: "Tareas Específicas:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_gp: "Gameplay Developer", role_ta: "Technical Artist/Animator", role_ui: "UI/UX",
+					skelly_task1: "Sistema de Audio Manager", skelly_task2: "Sistema de inventario dinámico", skelly_task3: "Diseño e implementación de menús (Inicio y Pausa) e inventario", skelly_task4: "Pipeline de Post Procesamiento"
+				},
+				en: {
+					nav_home: "Home", nav_contact: "Contact", nav_newest: "Newer", nav_oldest: "Older",
+					view_itch: "View on Itch.io",
+					skelly_quote: "Your goal is simple: Reach the city gates and escape the kingdom of Firekite, using your wits and the cover of night.",
+					skelly_desc1: "Skelly Scape is a third-person Escape Room game focused on exploration, strategy, and decision-making as a fugitive skeleton managing his inventory to escape the city. In this adventure, you embody Oswald Von Henrich — or rather, what remains of him — an undead who escaped the dungeons of the kingdom of Firekite and now seeks to regain the freedom he lost in life.",
+					skelly_desc2: "You must cross a territory full of traps, watchtowers, and obstacles while searching for tools and upgrades to help you survive your escape. But be careful: you don't have much muscle, so you can only carry a few items at a time. Each item could mean the difference between returning to the dungeon or seeing a new dawn outside the city. Manage your space carefully, and try to remember where you leave things; you might need them again.",
+					skelly_desc3: "Game developed with Unity 6.3. Collaboratively developed as part of the Limited Capacity Game Jam. Active development.",
+					my_roles: "My Roles:", specific_tasks: "Specific Tasks:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_gp: "Gameplay Developer", role_ta: "Technical Artist/Animator", role_ui: "UI/UX",
+					skelly_task1: "Audio Manager System", skelly_task2: "Dynamic Inventory System", skelly_task3: "Menu Design & Implementation (Start and Pause) and Inventory", skelly_task4: "Post-Processing Pipeline"
+				}
+			};
+
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function applyLanguage() {
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						el.innerText = translations[currentLang][key];
+					}
+				});
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+			}
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				applyLanguage();
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				applyLanguage();
+			});
+		</script>
 	</body>
 </html>

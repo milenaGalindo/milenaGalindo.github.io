@@ -14,103 +14,131 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Danna Quimbay</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html#three">Contacto</a></li>
-						<li><a>Más Reciente</a></li>
-						<li><a href="Ref4_iHaveNoEnemies.html"class="active">Más Antiguo</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Danna Quimbay</a>
+			<nav>
+				<ul>
+					<li><a href="index.html" data-key="nav_home">Inicio</a></li>
+					<li><a href="index.html#three" data-key="nav_contact">Contacto</a></li>
+					<li><a data-key="nav_newest">Más Reciente</a></li>
+					<li><a href="Ref4_iHaveNoEnemies.html" class="active" data-key="nav_oldest">Más Antiguo</a></li>
+					<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Baiquimu</h1>
-							<span class="image fit"><img src="images/Baiquimu_1.jpeg" alt="" /></span>
-							<section class="inner">
-								<ul class="actions fit" >
-									<li><a href="https://andreagranados.itch.io/baiquimu" class="button">Ver en Itch.io</a></li>
-								</ul>
-							</section>
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<div class="row gtr-uniform"> 
-										<div class="col-12"><span class="image fit"><a href="images/IHNE_3.png"><img src="images/PenguinPanic_2.png" alt="" /></a></span></div>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_3.png"><img src="images/PenguinPanic_4.png" alt="" /></a></span></div>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_3.png"><img src="images/PenguinPanic_1.png" alt="" /></a></span></div>
-										
-	
-									</div>
-								</div>
-								<div class="col-8 col-12-medium">
-									<blockquote>"¿Como llega un ave no voladora a una isla en el cielo? ¡Quien sabe! Ojalá se quede un rato; despues de todo, es una larga caida."</blockquote>
-									<p>Baiquimu es un juego de acción 2.5D en el que una pequeña brujita llega al misterioso pueblo de Bayquimu, donde los fantasmas han sembrado el miedo y obligado
-										a sus habitantes a esconderse en sus casas. Decidida a ayudarlos, la brujita usa su magia para proteger el pueblo; sin embargo, sus poderes son limitados.
-										El jugador deberá ser estratégico, eligiendo cuidadosamente qué zonas defender, ya que no es posible cubrir todo el territorio al mismo tiempo.
-
-
-									</p>
-									<p>
-										Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.
-									</p>
-								</div>
-							</div>	
-							<p>	</p>
-							<div class="row">
-								<div class="col-5 col-12-medium">
-									<h3>Mis Roles:</h3>
-									<ul>
-										<li>Project Manager/Scrum Master</li>
-										<li>Animation Artist + Developer</li>
-										<li>NPCs & Background assets Artist + Developer</li>
-									</ul>								
-								</div>
-								<div class="col-7 col-12-medium">
-									<h3>Tareas Específicas:</h3>
-									<ul>
-										<li>Implementación sistema de Audio Manager.</li>
-										<li>Implementación control de personaje.</li>
-										<li>Implementación IA de enemigos.</li>
-										<li>Sistema de Powerups dinámico (aplicable a jugador y enemigos, escalable).</li>
-										<li>Diseño e implementación de menús (Inicio y Pausa).</li>
-										<li>Diseño e implementación de animaciones con Spritemanager tipo 2.5D/Billboard .</li>
-										<li>Implementación temporizador.</li>
-										<li>Sistema de spawneo por oleadas.</li>
-										<li>Implementación de música y SFX.</li>
-										<li>Implementación VFX y efectos de postprocesamiento.</li>
-									</ul>								
-								</div>
-							</div>	
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+		<div id="wrapper">
+			<section id="main" class="wrapper">
 				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					<h1 class="major">Baiquimu</h1>
+					<span class="image fit"><img src="images/Baiquimu_1.jpeg" alt="" /></span>
+					<section class="inner">
+						<ul class="actions fit">
+							<li><a href="https://andreagranados.itch.io/baiquimu" class="button primary" data-key="view_itch">Ver en Itch.io</a></li>
+						</ul>
+					</section>
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<div class="row gtr-uniform"> 
+								<div class="col-6"><span class="image fit"><a href="images/Baiquimu_5.png"><img src="images/Baiquimu_5.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/Baiquimu_2.png"><img src="images/Baiquimu_2.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/Baiquimu_3.png"><img src="images/Baiquimu_3.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/Baiquimu_4.png"><img src="images/Baiquimu_4.png" alt="" /></a></span></div>
+							</div>
+						</div>
+						<div class="col-8 col-12-medium">
+							<p data-key="baiquimu_desc1">Baiquimu es un juego de acción 2.5D en el que una pequeña brujita llega al misterioso pueblo de Bayquimu, donde los fantasmas han sembrado el miedo y obligado a sus habitantes a esconderse en sus casas. Decidida a ayudarlos, la brujita usa su magia para proteger el pueblo; sin embargo, sus poderes son limitados. El jugador deberá ser estratégico, eligiendo cuidadosamente qué zonas defender, ya que no es posible cubrir todo el territorio al mismo tiempo.</p>
+							<p data-key="baiquimu_desc2">Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.</p>
+						</div>
+					</div>	
+					<p></p>
+					<div class="row box">
+						<div class="col-5 col-12-medium">
+							<h3 data-key="my_roles">Mis Roles:</h3>
+							<ul>
+								<li data-key="role_pm">Project Manager</li>
+								<li data-key="role_sm">Scrum Master</li>
+								<li data-key="role_anim">2D Bone Animation Artist + Rigger</li>
+								<li data-key="role_asset">NPCs & Background assets Artist + Developer</li>
+								<li data-key="role_ld">Level Designer</li>
+							</ul>								
+						</div>
+						<div class="col-7 col-12-medium">
+							<h3 data-key="specific_tasks">Tareas Específicas:</h3>
+							<ul>
+								<li data-key="baiquimu_task1">Diseño de NPCs enemigos.</li>
+								<li data-key="baiquimu_task2">Animación y riggeo de NPCs y protagonista.</li>
+								<li data-key="baiquimu_task3">Diseño e implementación final de assets del escenario.</li>
+								<li data-key="baiquimu_task4">Diseño e implementación final de texturas.</li>
+								<li data-key="baiquimu_task5">Desarrollo implementación 2.5D / Billboard.</li>
+								<li data-key="baiquimu_task6">Implementación efectos de postprocesamiento.</li>
+								<li data-key="baiquimu_task7">Diseño y layout de nivel.</li>
+							</ul>								
+						</div>
+					</div>	
 				</div>
-			</footer>
+			</section>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const translations = {
+				es: {
+					nav_home: "Inicio", nav_contact: "Contacto", nav_newest: "Más Reciente", nav_oldest: "Más Antiguo",
+					view_itch: "Ver en Itch.io",
+					baiquimu_desc1: "Baiquimu es un juego de acción 2.5D en el que una pequeña brujita llega al misterioso pueblo de Bayquimu, donde los fantasmas han sembrado el miedo y obligado a sus habitantes a esconderse en sus casas. Decidida a ayudarlos, la brujita usa su magia para proteger el pueblo; sin embargo, sus poderes son limitados. El jugador deberá ser estratégico, eligiendo cuidadosamente qué zonas defender, ya que no es posible cubrir todo el territorio al mismo tiempo.",
+					baiquimu_desc2: "Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.",
+					my_roles: "Mis Roles:", specific_tasks: "Tareas Específicas:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_anim: "2D Bone Animation Artist + Rigger", role_asset: "NPCs & Background assets Artist + Developer", role_ld: "Level Designer",
+					baiquimu_task1: "Diseño de NPCs enemigos.", baiquimu_task2: "Animación y riggeo de NPCs y protagonista.", baiquimu_task3: "Diseño e implementación final de assets del escenario.", baiquimu_task4: "Diseño e implementación final de texturas.", baiquimu_task5: "Desarrollo implementación 2.5D / Billboard.", baiquimu_task6: "Implementación efectos de postprocesamiento.", baiquimu_task7: "Diseño y layout de nivel."
+				},
+				en: {
+					nav_home: "Home", nav_contact: "Contact", nav_newest: "Newer", nav_oldest: "Older",
+					view_itch: "View on Itch.io",
+					baiquimu_desc1: "Baiquimu is a 2.5D action game where a little witch arrives at the mysterious village of Baiquimu, where ghosts have sown fear and forced its inhabitants to hide in their homes. Determined to help them, the witch uses her magic to protect the village; however, her powers are limited. The player must be strategic, carefully choosing which areas to defend, as it is not possible to cover the entire territory at once.",
+					baiquimu_desc2: "Game developed with Unity 6.3. Custom assets designed in Krita. Active development.",
+					my_roles: "My Roles:", specific_tasks: "Specific Tasks:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_anim: "2D Bone Animation Artist + Rigger", role_asset: "NPCs & Background assets Artist + Developer", role_ld: "Level Designer",
+					baiquimu_task1: "Enemy NPC design.", baiquimu_task2: "Animation and rigging of NPCs and protagonist.", baiquimu_task3: "Final design and implementation of environment assets.", baiquimu_task4: "Final texture design and implementation.", baiquimu_task5: "2.5D / Billboard implementation development.", baiquimu_task6: "Post-processing effects implementation.", baiquimu_task7: "Level design and layout."
+				}
+			};
+
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function applyLanguage() {
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						el.innerText = translations[currentLang][key];
+					}
+				});
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+			}
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				applyLanguage();
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				applyLanguage();
+			});
+		</script>
 	</body>
 </html>

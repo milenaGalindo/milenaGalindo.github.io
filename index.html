@@ -20,10 +20,11 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Bienvenido</a></li>
-							<li><a href="#one">Portafolio</a></li>
-							<li><a href="#two">Sobre Mi</a></li>
-							<li><a href="#three">Contáctame</a></li>
+							<li><a href="#intro" data-key="nav_welcome">Bienvenido</a></li>
+							<li><a href="#one" data-key="nav_portfolio">Portafolio</a></li>
+							<li><a href="#two" data-key="nav_about">Sobre Mi</a></li>
+							<li><a href="#three" data-key="nav_contact">Contáctame</a></li>
+							<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
 						</ul>
 					</nav>
 				</div>
@@ -36,343 +37,296 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Danna Milena Quimbay</h1>
-							<p>Unity Game Developer | Visual Pipeline Focus </p>
+							<p data-key="job_role">Unity Game Developer | Visual Pipeline Focus</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly primary">Mi Trabajo</a></li>
+								<li><a href="#one" class="button scrolly primary" data-key="my_work">Mi Trabajo</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- One -->
+				<!-- One - Portafolio -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
 							<a href="Ref5_Baiquimu.html" class="image"><img src="images/Baiquimu_1.jpeg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="row">
 									<div class="col-6 col-12-medium">
-										<h2>Baiquimu</h2>
+										<h2 data-key="proj1_title">Baiquimu</h2>
 										<h5>2026</h5>
-										<p>Topdown 2.5D de acción en donde una brujita debe usar su limitada magia para liberar al pueblo de Baiquimu
-											de los espectros que lo atormentan. Desarrollo colaborativo para LAGS Game Jam 2026.</p>
+										<p data-key="proj1_desc">Topdown 2.5D de acción en donde una brujita debe usar su limitada magia para liberar al pueblo de Baiquimu de los espectros que lo atormentan. Desarrollo colaborativo para LAGS Game Jam 2026.</p>
 									</div>
 									<div class="col-6 col-12-medium">
-										<h3>Mis Aportes</h3>
-											<ul>
-												<li>Diseño de enemigos y props.</li>
-												<li>Rig y animación de personajes 2D.</li>
-												<li>Organizacion y gestión de equipo.</li>
-												<li>Implementación assets tipo billboard.</li>
-											</ul>
+										<h3 data-key="proj1_contrib_title">Mis Aportes</h3>
+										<ul>
+											<li data-key="proj1_contrib1">Diseño de enemigos y props.</li>
+											<li data-key="proj1_contrib2">Rig y animación de personajes 2D.</li>
+											<li data-key="proj1_contrib3">Organización y gestión de equipo.</li>
+											<li data-key="proj1_contrib4">Implementación assets tipo billboard.</li>
+										</ul>
 									</div>
-									
 									<ul class="actions">
-										<li><a href="Ref5_Baiquimu.html" class="button primary">Más Información</a></li>
+										<li><a href="Ref5_Baiquimu.html" class="button primary" data-key="more_info">Más Información</a></li>
 									</ul>
 								</div>
-
 							</div>
 						</section>
+						
 						<section>
 							<a href="Ref4_iHaveNoEnemies.html" class="image"><img src="images/IHNE_1.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="row">
 									<div class="col-6 col-12-medium">
-										<h2>I Have No Enemies</h2>
+										<h2 data-key="proj2_title">I Have No Enemies</h2>
 										<h5>2026</h5>
-										<p>Topdown 2D pixelart donde debes rescatar gatos de una masmorra en donde tu unica herramienta
-											es el poder de reconfortar a tus enemigos. Desarrollo colaborativo para Game Jam.</p>
+										<p data-key="proj2_desc">Topdown 2D pixelart donde debes rescatar gatos de una masmorra en donde tu única herramienta es el poder de reconfortar a tus enemigos. Desarrollo colaborativo para Game Jam.</p>
 									</div>
 									<div class="col-6 col-12-medium">
-										<h3>Mis Aportes</h3>
-											<ul>
-												<li>Diseño y layout de nivel.</li>
-												<li>Integración y aplicación de Tilemap.</li>
-												<li>Diseño e implementación UI/UX.</li>
-												<li>Desarrollo de lógica de juego.</li>
-											</ul>
+										<h3 data-key="proj2_contrib_title">Mis Aportes</h3>
+										<ul>
+											<li data-key="proj2_contrib1">Diseño y layout de nivel.</li>
+											<li data-key="proj2_contrib2">Integración y aplicación de Tilemap.</li>
+											<li data-key="proj2_contrib3">Diseño e implementación UI/UX.</li>
+											<li data-key="proj2_contrib4">Desarrollo de lógica de juego.</li>
+										</ul>
 									</div>
-									
 									<ul class="actions">
-										<li><a href="Ref4_iHaveNoEnemies.html" class="button primary">Más Información</a></li>
+										<li><a href="Ref4_iHaveNoEnemies.html" class="button primary" data-key="more_info">Más Información</a></li>
 									</ul>
 								</div>
-
 							</div>
 						</section>
+						
 						<section>
-							<a href="Ref1_SkellyEscape.html" class="image"><img src="images/Screenshoot1.png" alt="" data-position="center left" /></a>
+							<a href="Ref1_SkellyEscape.html" class="image"><img src="images/Screenshoot1.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="row">
 									<div class="col-6 col-12-medium">
-										<h2>Skelly Escape</h2>
+										<h2 data-key="proj3_title">Skelly Escape</h2>
 										<h5>2026</h5>
-										<p>Escape Room centrado en la exploración y la toma de decisiones sobre un esqueleto
-									 intentando escapar de la ciudad. Desarrollo colaborativo para Game Jam.</p>
+										<p data-key="proj3_desc">Escape Room centrado en la exploración y la toma de decisiones sobre un esqueleto intentando escapar de la ciudad. Desarrollo colaborativo para Game Jam.</p>
 									</div>
 									<div class="col-6 col-12-medium">
-										<h3>Mis Aportes</h3>
-											<ul>
-												<li>Sistema inventario dinámico.</li>
-												<li>Post Procesamiento de Imagen.</li>
-												<li>Diseño e implementación UI/UX.</li>
-												<li>Sistema de Audio Manager Global.</li>
-											</ul>
+										<h3 data-key="proj3_contrib_title">Mis Aportes</h3>
+										<ul>
+											<li data-key="proj3_contrib1">Sistema inventario dinámico.</li>
+											<li data-key="proj3_contrib2">Post Procesamiento de Imagen.</li>
+											<li data-key="proj3_contrib3">Diseño e implementación UI/UX.</li>
+											<li data-key="proj3_contrib4">Sistema de Audio Manager Global.</li>
+										</ul>
 									</div>
-									
 									<ul class="actions">
-										<li><a href="Ref1_SkellyEscape.html" class="button primary">Más Información</a></li>
+										<li><a href="Ref1_SkellyEscape.html" class="button primary" data-key="more_info">Más Información</a></li>
 									</ul>
 								</div>
-
 							</div>
 						</section>
 						
-						
-						
+						<!-- Proyectos adicionales (ocultos inicialmente) -->
 						<div id="content" style="display: none;">
-							<section id="test" class="wrapper style2 spotlights">
+							<section class="wrapper style2 spotlights">
 								<section>
-							<a href="Ref2_PenguinPanic.html" class="image"><img src="images/PenguinPanic_3.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="row">
-									<div class="col-6 col-12-medium">
-										<h2>Penguin Panic</h2>
-										<h5>2026</h5>
-										<p>Videojuego 3D inspirado en Crash Bash y Mario Party. Controla a un pingüino y evitar caer al vacio. Estética
-											inspirada por Don't Starve y Paper Mario.
-										</p>
-									</div>
-									<div class="col-6 col-12-medium">
-										<h3>Mis Aportes</h3>
-											<ul>
-												<li>Arte y animaciones 2D .</li>
-												<li>Sitema PowerUps aplicable a jugador y enemigos.</li>
-												<li>Diseño e implementación menús.</li>
-												<li>Implementación VFX (particuladores) y SFX.</li>
+									<a href="Ref2_PenguinPanic.html" class="image"><img src="images/PenguinPanic_3.png" alt="" data-position="center center" /></a>
+									<div class="content">
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<h2 data-key="proj4_title">Penguin Panic</h2>
+												<h5>2026</h5>
+												<p data-key="proj4_desc">Videojuego 3D inspirado en Crash Bash y Mario Party. Controla a un pingüino y evitar caer al vacío. Estética inspirada por Don't Starve y Paper Mario.</p>
+											</div>
+											<div class="col-6 col-12-medium">
+												<h3 data-key="proj4_contrib_title">Mis Aportes</h3>
+												<ul>
+													<li data-key="proj4_contrib1">Arte y animaciones 2D.</li>
+													<li data-key="proj4_contrib2">Sistema PowerUps aplicable a jugador y enemigos.</li>
+													<li data-key="proj4_contrib3">Diseño e implementación menús.</li>
+													<li data-key="proj4_contrib4">Implementación VFX (particuladores) y SFX.</li>
+												</ul>
+											</div>
+											<ul class="actions">
+												<li><a href="Ref2_PenguinPanic.html" class="button primary" data-key="more_info">Más Información</a></li>
 											</ul>
+										</div>
 									</div>
-									
-									<ul class="actions">
-										<li><a href="Ref2_PenguinPanic.html" class="button primary">Más Información</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="Ref3_TaleOfTheBrokenSpell.html" class="image"><img src="images/Templo_Concept.png" alt="" data-position="center left" /></a>
-							<div class="content">
-								<div class="row">
-									<div class="col-6 col-12-medium">
-										<h2>The Tale of the Broken Spell</h2>
-										<h5>2024</h5>
-										<p>Plataformer 2D donde cambiaras entre realidades para escapar un echizo roto.
-										Desarrollo colaborativo para Game Jam.</p>
-									</div>
-									<div class="col-6 col-12-medium">
-										<h3>Mis Aportes</h3>
-											<ul>
-												<li>Assets tipo Pixel Art.</li>
-												<li>Diseño de 100+ assets.</li>
-												<li>Organización atlas de texturas.</li>
+								</section>
+								
+								<section>
+									<a href="Ref3_TaleOfTheBrokenSpell.html" class="image"><img src="images/Templo_Concept.png" alt="" data-position="center left" /></a>
+									<div class="content">
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<h2 data-key="proj5_title">The Tale of the Broken Spell</h2>
+												<h5>2024</h5>
+												<p data-key="proj5_desc">Plataformer 2D donde cambiarás entre realidades para escapar de un hechizo roto. Desarrollo colaborativo para Game Jam.</p>
+											</div>
+											<div class="col-6 col-12-medium">
+												<h3 data-key="proj5_contrib_title">Mis Aportes</h3>
+												<ul>
+													<li data-key="proj5_contrib1">Assets tipo Pixel Art.</li>
+													<li data-key="proj5_contrib2">Diseño de 100+ assets.</li>
+													<li data-key="proj5_contrib3">Organización atlas de texturas.</li>
+												</ul>
+											</div>
+											<ul class="actions">
+												<li><a href="Ref3_TaleOfTheBrokenSpell.html" class="button primary" data-key="more_info">Más Información</a></li>
 											</ul>
+										</div>
 									</div>
-									
-									<ul class="actions">
-										<li><a href="Ref3_TaleOfTheBrokenSpell.html" class="button primary	">Más Información</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-							</section>							
+								</section>
+							</section>
 						</div>
-
-							
 					</section>
+					
+					<!-- Botón toggle proyectos -->
 					<section id="opcSectiond" class="wrapper style1 fade-up">
 						<section class="inner">
-							<ul class="actions fit" >
-								<li><a id="toggleBtn" class="button primary">Ver más proyectos</a></li>
-								<script>
-									const btn = document.getElementById('toggleBtn');
-									const content = document.getElementById('content');
-									
-									btn.onclick = function() {
-										if (content.style.display === "none") {
-										content.style.display = "block";
-										btn.textContent = "Ver menos proyectos";
-										} else {
-										content.style.display = "none";
-										btn.textContent = "Ver más proyectos";
-										}
-									};
-								</script>	
-							</ul>
-					</section>
-					</section>
-						
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Sobre mi</h2>
-							
-							<p><!--<span class="image left"><img src="images/PhotoPlaceholder.png" alt="" /></span>--> Soy una desarrolladora de Unity (C#) especializada en mecánicas de juego, integración de assets, implementación de animaciones y soporte en testing.
-								Mi foco es el pipeline visual, colaborando con equipos multidisciplinarios para transformar conceptos artísticos en implementaciones funcionales.</p>
-
-								<p>Ademas de desarroladora, también soy una artista digital especializada en animación digital 2D, con más de 3 años de experiencia en animación de personajes,
-								dirección y supervisión de arte, VFX y desarrollo de assets para producciones audiovisuales y de videojuegos. He liderado procesos de exploración visual,
-								transformando conceptos iniciales en propuestas estéticas concretas alineadas con el cronograma y presupuesto del proyecto.</p>
-
-								<p>Desde que era muy joven los videojuegos fueron una presencia constante en mi vida gracias a mi hermano. Hoy en día, y gracias a mi formación profesional como artista,
-								mi pasión por los videojuegos se alimenta desde su naturaleza multidiciplinar como medios creación y expresión. Considero los videojuegos como un medio con gran potencial
-								para contar historias y desarrollar experiencias, y es precisamente esta diversidad la que me ha llevado a trabajar en esta industria, llegando un día a
-								desempeñarme como Tech Artist.</p>
-
-								<p>Soy competente con herramientas como Toon Bom Harony, Blender y la Suite de Adobe, así como poseo conocimientos de Git, Java, Python y CSS.</p>
-								<section class="inner">
-							<ul class="actions fit" >
-								<li><a href="QuimbayDanna_CV_2026v2.pdf" download="QuimbayDanna_CV_2026v2" class="button primary">Ver CV</a></li>
+							<ul class="actions fit">
+								<li><a id="toggleBtn" class="button primary" data-key="view_more">Ver más proyectos</a></li>
 							</ul>
 						</section>
+					</section>
+
+				<!-- Two - Sobre Mi -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2 data-key="about_title">Sobre mi</h2>
+							
+							<p data-key="about_text1">Soy una desarrolladora de Unity (C#) especializada en mecánicas de juego, integración de assets, implementación de animaciones y soporte en testing. Mi foco es el pipeline visual, colaborando con equipos multidisciplinarios para transformar conceptos artísticos en implementaciones funcionales.</p>
+
+							<p data-key="about_text2">Además de desarrolladora, también soy una artista digital especializada en animación digital 2D, con más de 3 años de experiencia en animación de personajes, dirección y supervisión de arte, VFX y desarrollo de assets para producciones audiovisuales y de videojuegos. He liderado procesos de exploración visual, transformando conceptos iniciales en propuestas estéticas concretas alineadas con el cronograma y presupuesto del proyecto.</p>
+
+							<p data-key="about_text3">Desde que era muy joven los videojuegos fueron una presencia constante en mi vida gracias a mi hermano. Hoy en día, y gracias a mi formación profesional como artista, mi pasión por los videojuegos se alimenta desde su naturaleza multidisciplinar como medio de creación y expresión. Considero los videojuegos como un medio con gran potencial para contar historias y desarrollar experiencias, y es precisamente esta diversidad la que me ha llevado a trabajar en esta industria, llegando un día a desempeñarme como Tech Artist.</p>
+
+							<p data-key="about_text4">Soy competente con herramientas como Toon Boom Harmony, Blender y la Suite de Adobe, así como poseo conocimientos de Git, Java, Python y CSS.</p>
+							
+							<section class="inner">
+								<ul class="actions fit">
+									<li><a href="QuimbayDanna_CV_2026v2.pdf" download="QuimbayDanna_CV_2026v2" class="button primary" data-key="download_cv">Ver CV</a></li>
+								</ul>
+							</section>
+							
 							<div class="row">
 								<div class="col-6 col-12-medium">
-									<p></p>
 									<div class="features">									
 										<section>
-											<h2>Experiencia</h2>
+											<h2 data-key="experience_title">Experiencia</h2>
 										</section>							
 										<section>
 											<span class="icon solid major fa-paint-brush"></span>
 											<h3>Freelancer</h3>
 											<h5>Trabajo Remoto Independiente | Bogotá, Colombia</h5>
 											<h5>Agosto 2024 - Actualidad</h5>
-											<p></p>
 										</section>
 										<section>
 											<span class="icon solid major fa-pencil-alt"></span>									
 											<h3>Directora de Arte | Asistente de Producción | Artista y Supervisora de Fondos | Animadora</h3>
 											<h5>Universidad Nacional de Colombia | Bogotá, Colombia</h5>
 											<h5>Octubre 2023 - Mayo 2023</h5>
-											<p></p>
 										</section>
 										<section>
 											<span class="icon solid major fa-cogs"></span>
 											<h3>Artista | Animadora | Tester</h3>
 											<h5>Tortugas Studios S.A.S. | Bogotá, Colombia</h5>
 											<h5>Marzo 2022 - Junio 2023</h5>
-											<p></p>
 										</section>								
 										<section>
 											<span class="icon solid major fa-gamepad"></span>
 											<h3>Artista de Assets</h3>
 											<h5>Global Women Game Jam 2024 | Bogotá, Colombia</h5>
 											<h5>Septiembre 2024 - Septiembre 2024</h5>
-											<p></p>
 										</section>									
 									</div>
 								</div>
 								
 								<div class="col-6 col-12-medium">
-									<p></p>
 									<div class="features">	
 										<section>
-											<h2>Estudios</h2>
+											<h2 data-key="education_title">Estudios</h2>
 										</section>
 										<section>
 											<span class="icon solid major fa-gamepad"></span>
 											<h3>Desarrolladora Junior de Unity</h3>
 											<h5>Generation Colombia</h5>
 											<h5>Enero 2026 - Mayo 2026 (En curso)</h5>
-											<p></p>
 										</section>
 										<section>
 											<span class="icon solid major fa-pencil-alt"></span>
 											<h3>Especialista en Animación</h3>
 											<h5>Universidad Nacional de Colombia</h5>
 											<h5>Agosto 2023 - Septiembre 2024</h5>
-											<p></p>
 										</section>							
 										<section>
 											<span class="icon solid major fa-paint-brush"></span>
 											<h3>Maestra en Artes Plásticas</h3>
 											<h5>Universidad Nacional de Colombia</h5>
 											<h5>Agosto 2017 - Abril 2024</h5>
-											<p></p>
 										</section>
 										<section>
 											<span class="icon solid major fa-gamepad"></span>
 											<h3>Desarrolladora de Videojuegos Nivel Intermedio</h3>
 											<h5>Universidad Nacional de Colombia | ATENEA</h5>
 											<h5>Mayo 2023 - Septiembre 2023</h5>
-											<p></p>
 										</section>
 										<section>
 											<span class="icon solid major fa-laptop-code"></span>
-											<h3>Desarrolla de Software y Aplicaciones Web</h3>
+											<h3>Desarrolladora de Software y Aplicaciones Web</h3>
 											<h5>Universidad Industrial de Santander | MisiónTIC</h5>
 											<h5>Abril 2021 - Diciembre 2021</h5>
-											<p></p>
 										</section>
 									</div>
 								</div>
-								
-							</div>
-																				
+							</div>																				
 						</div>
-							
 					</section>
 
-				<!-- Three -->
+				<!-- Three - Contacto -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Contáctame</h2>
-							<p>¿Necesitas preguntarme algo? No dudes en enviarme un mensaje en mis redes sociales, o a travez de este formulario. Me pondré en contacto prontamente. </p>
+							<h2 data-key="contact_title">Contáctame</h2>
+							<p data-key="contact_desc">¿Necesitas preguntarme algo? No dudes en enviarme un mensaje en mis redes sociales, o a través de este formulario. Me pondré en contacto prontamente.</p>
 							<div class="split style1">
 								<section>
-								
-									<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfn7zaJ8Uo3iv-vh7J3IYNh7vq28KKK_1DhsVnAxUWi8GseyQ/formResponse" target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-shuffle-seed="-4807854499486481384" data-clean-viewform-url="https://docs.google.com/forms/d/e/1FAIpQLSfn7zaJ8Uo3iv-vh7J3IYNh7vq28KKK_1DhsVnAxUWi8GseyQ/viewform?usp=preview" data-response="%.@.]" data-dlp-data="%.@.null,false]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">										<div class="fields">
+									<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfn7zaJ8Uo3iv-vh7J3IYNh7vq28KKK_1DhsVnAxUWi8GseyQ/formResponse" target="_self" method="POST" id="mG61Hd">
+										<div class="fields">
 											<div class="field half">
-												<label for="name">Nombre</label>
+												<label for="name" data-key="form_name">Nombre</label>
 												<input type="text" name="entry.1184899273" id="name" />
 											</div>
 											<div class="field half">
-												<label for="email">Correo</label>
+												<label for="email" data-key="form_email">Correo</label>
 												<input type="text" name="entry.1495615963" id="email" />
 											</div>
 											<div class="field">
-												<label for="message">Mensaje</label>
+												<label for="message" data-key="form_message">Mensaje</label>
 												<textarea name="entry.1910986904" id="message" rows="5"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><button class="button" type="submit" href="https://milenagalindo.github.io">Enviar Mensaje</button></li>
+											<li><button class="button" type="submit" data-key="form_submit">Enviar Mensaje</button></li>
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Ubicación</h3>
-											<span>Bogotá D.C.,<br />
-											Colombia</span>
+											<h3 data-key="location">Ubicación</h3>
+											<span>Bogotá D.C.,<br />Colombia</span>
 										</li>
 										<li>
-											<h3>Correo</h3>
+											<h3 data-key="email_label">Correo</h3>
 											<a href="#">d.mileq99@gmail.com</a>
 										</li>
 										<li>
-											<h3>Teléfono</h3>
+											<h3 data-key="phone_label">Teléfono</h3>
 											<span>(+57) 3057636946</span>
 										</li>
 										<li>
-											<h3>Redes</h3>
+											<h3 data-key="social_label">Redes</h3>
 											<ul class="icons">
 												<li><a href="https://donna99.itch.io/" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
 												<li><a href="https://github.com/milenaGalindo" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 												<li><a href="https://www.linkedin.com/in/dannaquimbay/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 												<li><a href="https://www.artstation.com/dmile" class="icon brands fa-artstation"><span class="label">ArtStation</span></a></li>												
 												<li><a href="https://www.instagram.com/dmileq.99/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												
 											</ul>
 										</li>
 									</ul>
@@ -380,7 +334,6 @@
 							</div>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
@@ -401,5 +354,181 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<script>
+			// --- TRADUCCIONES COMPLETAS ---
+			const translations = {
+				es: {
+					nav_welcome: "Bienvenido",
+					nav_portfolio: "Portafolio",
+					nav_about: "Sobre Mi",
+					nav_contact: "Contáctame",
+					job_role: "Desarrolladora de Unity | Foco en Pipeline Visual",
+					my_work: "Mi Trabajo",
+					proj1_title: "Baiquimu",
+					proj1_desc: "Topdown 2.5D de acción en donde una brujita debe usar su limitada magia para liberar al pueblo de Baiquimu de los espectros que lo atormentan. Desarrollo colaborativo para LAGS Game Jam 2026.",
+					proj1_contrib_title: "Mis Aportes",
+					proj1_contrib1: "Diseño de enemigos y props.",
+					proj1_contrib2: "Rig y animación de personajes 2D.",
+					proj1_contrib3: "Organización y gestión de equipo.",
+					proj1_contrib4: "Implementación assets tipo billboard.",
+					proj2_title: "I Have No Enemies",
+					proj2_desc: "Topdown 2D pixelart donde debes rescatar gatos de una masmorra en donde tu única herramienta es el poder de reconfortar a tus enemigos. Desarrollo colaborativo para Game Jam.",
+					proj2_contrib_title: "Mis Aportes",
+					proj2_contrib1: "Diseño y layout de nivel.",
+					proj2_contrib2: "Integración y aplicación de Tilemap.",
+					proj2_contrib3: "Diseño e implementación UI/UX.",
+					proj2_contrib4: "Desarrollo de lógica de juego.",
+					proj3_title: "Skelly Escape",
+					proj3_desc: "Escape Room centrado en la exploración y la toma de decisiones sobre un esqueleto intentando escapar de la ciudad. Desarrollo colaborativo para Game Jam.",
+					proj3_contrib_title: "Mis Aportes",
+					proj3_contrib1: "Sistema inventario dinámico.",
+					proj3_contrib2: "Post Procesamiento de Imagen.",
+					proj3_contrib3: "Diseño e implementación UI/UX.",
+					proj3_contrib4: "Sistema de Audio Manager Global.",
+					proj4_title: "Penguin Panic",
+					proj4_desc: "Videojuego 3D inspirado en Crash Bash y Mario Party. Controla a un pingüino y evitar caer al vacío. Estética inspirada por Don't Starve y Paper Mario.",
+					proj4_contrib_title: "Mis Aportes",
+					proj4_contrib1: "Arte y animaciones 2D.",
+					proj4_contrib2: "Sistema PowerUps aplicable a jugador y enemigos.",
+					proj4_contrib3: "Diseño e implementación menús.",
+					proj4_contrib4: "Implementación VFX (particuladores) y SFX.",
+					proj5_title: "The Tale of the Broken Spell",
+					proj5_desc: "Plataformer 2D donde cambiarás entre realidades para escapar de un hechizo roto. Desarrollo colaborativo para Game Jam.",
+					proj5_contrib_title: "Mis Aportes",
+					proj5_contrib1: "Assets tipo Pixel Art.",
+					proj5_contrib2: "Diseño de 100+ assets.",
+					proj5_contrib3: "Organización atlas de texturas.",
+					more_info: "Más Información",
+					view_more: "Ver más proyectos",
+					view_less: "Ver menos proyectos",
+					about_title: "Sobre mí",
+					about_text1: "Soy una desarrolladora de Unity (C#) especializada en mecánicas de juego, integración de assets, implementación de animaciones y soporte en testing. Mi foco es el pipeline visual, colaborando con equipos multidisciplinarios para transformar conceptos artísticos en implementaciones funcionales.",
+					about_text2: "Además de desarrolladora, también soy una artista digital especializada en animación digital 2D, con más de 3 años de experiencia en animación de personajes, dirección y supervisión de arte, VFX y desarrollo de assets para producciones audiovisuales y de videojuegos. He liderado procesos de exploración visual, transformando conceptos iniciales en propuestas estéticas concretas alineadas con el cronograma y presupuesto del proyecto.",
+					about_text3: "Desde que era muy joven los videojuegos fueron una presencia constante en mi vida gracias a mi hermano. Hoy en día, y gracias a mi formación profesional como artista, mi pasión por los videojuegos se alimenta desde su naturaleza multidisciplinar como medio de creación y expresión. Considero los videojuegos como un medio con gran potencial para contar historias y desarrollar experiencias, y es precisamente esta diversidad la que me ha llevado a trabajar en esta industria, llegando un día a desempeñarme como Tech Artist.",
+					about_text4: "Soy competente con herramientas como Toon Boom Harmony, Blender y la Suite de Adobe, así como poseo conocimientos de Git, Java, Python y CSS.",
+					download_cv: "Ver CV",
+					experience_title: "Experiencia",
+					education_title: "Estudios",
+					contact_title: "Contáctame",
+					contact_desc: "¿Necesitas preguntarme algo? No dudes en enviarme un mensaje en mis redes sociales, o a través de este formulario. Me pondré en contacto prontamente.",
+					form_name: "Nombre",
+					form_email: "Correo",
+					form_message: "Mensaje",
+					form_submit: "Enviar Mensaje",
+					location: "Ubicación",
+					email_label: "Correo",
+					phone_label: "Teléfono",
+					social_label: "Redes"
+				},
+				en: {
+					nav_welcome: "Welcome",
+					nav_portfolio: "Portfolio",
+					nav_about: "About Me",
+					nav_contact: "Contact Me",
+					job_role: "Unity Game Developer | Visual Pipeline Focus",
+					my_work: "My Work",
+					proj1_title: "Baiquimu",
+					proj1_desc: "Action top-down 2.5D game where a little witch must use her limited magic to free the town of Baiquimu from the specters haunting it. Collaborative development for LAGS Game Jam 2026.",
+					proj1_contrib_title: "My Contributions",
+					proj1_contrib1: "Enemy and prop design.",
+					proj1_contrib2: "2D character rigging and animation.",
+					proj1_contrib3: "Team organization and management.",
+					proj1_contrib4: "Billboard asset implementation.",
+					proj2_title: "I Have No Enemies",
+					proj2_desc: "2D pixel art top-down game where you must rescue cats from a dungeon using only the power to comfort your enemies. Collaborative development for Game Jam.",
+					proj2_contrib_title: "My Contributions",
+					proj2_contrib1: "Level design and layout.",
+					proj2_contrib2: "Tilemap integration and application.",
+					proj2_contrib3: "UI/UX design and implementation.",
+					proj2_contrib4: "Game logic development.",
+					proj3_title: "Skelly Escape",
+					proj3_desc: "Escape room focused on exploration and decision-making as a skeleton trying to escape the city. Collaborative development for Game Jam.",
+					proj3_contrib_title: "My Contributions",
+					proj3_contrib1: "Dynamic inventory system.",
+					proj3_contrib2: "Image post-processing.",
+					proj3_contrib3: "UI/UX design and implementation.",
+					proj3_contrib4: "Global Audio Manager system.",
+					proj4_title: "Penguin Panic",
+					proj4_desc: "3D game inspired by Crash Bash and Mario Party. Control a penguin and avoid falling into the void. Aesthetic inspired by Don't Starve and Paper Mario.",
+					proj4_contrib_title: "My Contributions",
+					proj4_contrib1: "2D art and animations.",
+					proj4_contrib2: "Power-up system applicable to player and enemies.",
+					proj4_contrib3: "Menu design and implementation.",
+					proj4_contrib4: "VFX (particles) and SFX implementation.",
+					proj5_title: "The Tale of the Broken Spell",
+					proj5_desc: "2D platformer where you switch between realities to escape a broken spell. Collaborative development for Game Jam.",
+					proj5_contrib_title: "My Contributions",
+					proj5_contrib1: "Pixel art assets.",
+					proj5_contrib2: "100+ asset design.",
+					proj5_contrib3: "Texture atlas organization.",
+					more_info: "More Info",
+					view_more: "View more projects",
+					view_less: "View fewer projects",
+					about_title: "About Me",
+					about_text1: "I am a Unity developer (C#) specializing in game mechanics, asset integration, animation implementation, and testing support. My focus is the visual pipeline, collaborating with multidisciplinary teams to transform artistic concepts into functional implementations.",
+					about_text2: "In addition to being a developer, I am also a digital artist specialized in 2D digital animation, with over 3 years of experience in character animation, art direction and supervision, VFX, and asset development for audiovisual and video game productions. I have led visual exploration processes, transforming initial concepts into concrete aesthetic proposals aligned with project schedules and budgets.",
+					about_text3: "Since I was very young, video games have been a constant presence in my life thanks to my brother. Today, thanks to my professional training as an artist, my passion for video games is fueled by their multidisciplinary nature as a medium for creation and expression. I consider video games as a medium with great potential to tell stories and develop experiences, and it is precisely this diversity that has led me to work in this industry, eventually aiming to work as a Tech Artist.",
+					about_text4: "I am proficient with tools such as Toon Boom Harmony, Blender, and the Adobe Suite, and I have knowledge of Git, Java, Python, and CSS.",
+					download_cv: "View CV",
+					experience_title: "Experience",
+					education_title: "Education",
+					contact_title: "Contact Me",
+					contact_desc: "Need to ask me something? Feel free to send me a message on my social networks, or through this form. I will get back to you shortly.",
+					form_name: "Name",
+					form_email: "Email",
+					form_message: "Message",
+					form_submit: "Send Message",
+					location: "Location",
+					email_label: "Email",
+					phone_label: "Phone",
+					social_label: "Social Media"
+				}
+			};
+
+			// Obtener idioma guardado o usar español por defecto
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+				
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+							el.placeholder = translations[currentLang][key];
+						} else if (el.tagName === 'BUTTON') {
+							el.innerText = translations[currentLang][key];
+						} else {
+							el.innerText = translations[currentLang][key];
+						}
+					}
+				});
+			}
+
+			// Inicializar el idioma al cargar la página
+			document.addEventListener("DOMContentLoaded", () => {
+				// Configurar el texto del botón según el idioma guardado
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+				toggleLanguage();
+			});
+
+			// Lógica del botón toggle de proyectos (con traducción)
+			const toggleBtn = document.getElementById('toggleBtn');
+			const content = document.getElementById('content');
+			
+			if(toggleBtn && content) {
+				toggleBtn.onclick = function() {
+					if (content.style.display === "none") {
+						content.style.display = "block";
+						toggleBtn.innerText = translations[currentLang].view_less;
+					} else {
+						content.style.display = "none";
+						toggleBtn.innerText = translations[currentLang].view_more;
+					}
+				};
+			}
+		</script>
 	</body>
 </html>

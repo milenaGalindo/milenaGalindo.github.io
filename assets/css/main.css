@@ -3002,7 +3002,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 25em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3015,7 +3015,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 40%;
 		}
 
 			.spotlights > section > .image img {
@@ -3053,7 +3053,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 60%;
 			-ms-flex: 1;
 		}
 
@@ -3128,11 +3128,11 @@ input, select, textarea {
 
 			.spotlights > section > .image {
 				height: 50vh;
-				min-height: 15em;
+
 			}
 
 			.spotlights > section > .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 3em 2em 1em 2em ;	
 			}
 
 		}

@@ -14,108 +14,135 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Danna Quimbay</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html#three">Contacto</a></li>
-						<li><a href="Ref5_Baiquimu.html"class="active">Más Reciente</a></li>
-						<li><a href="Ref1_SkellyEscape.html" class="active">Más Antiguo</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Danna Quimbay</a>
+			<nav>
+				<ul>
+					<li><a href="index.html" data-key="nav_home">Inicio</a></li>
+					<li><a href="index.html#three" data-key="nav_contact">Contacto</a></li>
+					<li><a href="Ref5_Baiquimu.html" class="active" data-key="nav_newest">Más Reciente</a></li>
+					<li><a href="Ref1_SkellyEscape.html" class="active" data-key="nav_oldest">Más Antiguo</a></li>
+					<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">I Have No Enemies</h1>
-							<span class="image fit"><img src="images/IHNE_1.png" alt="" /></span>
-							<section class="inner">
-								<ul class="actions fit" >
-									<li><a href="https://sebastian-franco-gomez.itch.io/i-have-no-enemis" class="button">Ver en Itch.io</a></li>
-								</ul>
-							</section>
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<div class="row gtr-uniform"> 
-										<video class="col-12" controls width="600"><source src="videos/IHNE_video1.mp4" alt="" type="video/mp4"/></video>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_3.png"><img href="images/IHNE_2.png" src="images/IHNE_2.png" alt="" /></a></span></div>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_3.png"><img src="images/IHNE_3.png" alt="" /></a></span></div>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_4.png"><img src="images/IHNE_4.png" alt="" /></a></span></div>
-										<div class="col-6"><span class="image fit"><a href="images/IHNE_5.png"><img src="images/IHNE_5.png" alt="" /></a></span></div>
-										
-	
-									</div>
-								</div>
-								<div class="col-8 col-12-medium">
-									<blockquote>"En vida, fuiste un caballero de muchos títulos: heraldo de sangre y guerra, asesino de ejércitos, decapitador de los antiguos reyes... y portador de pecados imperdonables.
-										En el inevitable final de tu vida, San Pedro te condena a pasar la eternidad como viviste: una lucha eterna en el Limbo, pero sin tu amada espada. Al descender al mundo de los muertos,
-										ves todo como una vasta mazmorra, no muy diferente de aquel lugar donde dejabas morir de hambre a tus prisioneros. Te cruzas con criaturas aterradoras, pero entre ellas percibes a
-										un pequeño gato. La criatura te conmueve, impulsándote a rescatarlo. ¿Podría ser una prueba? ¿Una última oportunidad de redención? San Pedro te suplica: «Haz lo que en vida negaste».</br></br>
-
-										La respuesta es clara: en lugar de la perdición, debes reconciliarte con tus enemigos."</blockquote>
-									<p>I Have No Enemies es un juego Top Down 2D de estilo pixelart en donde encarnaras a un caballero que busca la redención en un limbo que toma la forma de un oscuro calabozo.
-										Este mundo está plagado de monstruos, tienes un tiempo limitado para cumplir tu tarea, y las creaturas de la oscuridad intentarán entopecer tu objetivo:
-										rescatar a todos los gatos de la mazmorra antes de que el contador llegue a 0. En lugar de combatir con un arma,
-										para sortear estos obstáculos deberás abrazar a tus enemigos para calmarlos y recuperar a los felinos.
-										El juego combina tensión, drama, ternura y un sencillo mensaje sobre el cambio y la redención. 
-									</p>
-									<p>
-										Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Wrong Genre. Desarrollo activo. 
-									</p>
-								</div>
-							</div>	
-							<p>	</p>
-							<div class="row">
-								<div class="col-5 col-12-medium">
-									<h3>Mis Roles:</h3>
-									<ul>
-										<li>Team Lead/Scrum Master</li>
-										<li>Game Mechanics Developer</li>
-										<li>UI/UX Designer & Developer</li>
-										<li>Level Designer</li>
-									</ul>								
-								</div>
-								<div class="col-7 col-12-medium">
-									<h3>Tareas Específicas:</h3>
-									<ul>
-										<li>Diseño y layout de nivel.</li>
-										<li>Integración y aplicación de Tilemaps.</li>
-										<li>Diseño e implementación de UI/UX.</li>
-										<li>Desarrollo de lógica de juego (lógica de victoria y derrota).</li>
-										<li>Implementación mecánica de contador de tiempo.</li>
-										<li>Implementación de contador global de colectibles.</li>
-										<li>Implementación efectos de postprocesamiento.</li>
-									</ul>								
-								</div>
-							</div>	
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+		<div id="wrapper">
+			<section id="main" class="wrapper">
 				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					<h1 class="major">I Have No Enemies</h1>
+					<span class="image fit"><img src="images/IHNE_1.png" alt="" /></span>
+					<section class="inner">
+						<ul class="actions fit">
+							<li><a href="https://sebastian-franco-gomez.itch.io/i-have-no-enemis" class="button" data-key="view_itch">Ver en Itch.io</a></li>
+						</ul>
+					</section>
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<div class="row gtr-uniform"> 
+								<video class="col-12" controls width="600"><source src="videos/IHNE_video1.mp4" type="video/mp4"/></video>
+								<div class="col-6"><span class="image fit"><a href="images/IHNE_2.png"><img src="images/IHNE_2.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/IHNE_3.png"><img src="images/IHNE_3.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/IHNE_4.png"><img src="images/IHNE_4.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/IHNE_5.png"><img src="images/IHNE_5.png" alt="" /></a></span></div>
+							</div>
+						</div>
+						<div class="col-8 col-12-medium">
+							<blockquote data-key="ihne_quote">"En vida, fuiste un caballero de muchos títulos: heraldo de sangre y guerra, asesino de ejércitos, decapitador de los antiguos reyes... y portador de pecados imperdonables. En el inevitable final de tu vida, San Pedro te condena a pasar la eternidad como viviste: una lucha eterna en el Limbo, pero sin tu amada espada. Al descender al mundo de los muertos, ves todo como una vasta mazmorra, no muy diferente de aquel lugar donde dejabas morir de hambre a tus prisioneros. Te cruzas con criaturas aterradoras, pero entre ellas percibes a un pequeño gato. La criatura te conmueve, impulsándote a rescatarlo. ¿Podría ser una prueba? ¿Una última oportunidad de redención? San Pedro te suplica: «Haz lo que en vida negaste». La respuesta es clara: en lugar de la perdición, debes reconciliarte con tus enemigos."</blockquote>
+							<p data-key="ihne_desc1">I Have No Enemies es un juego Top Down 2D de estilo pixelart en donde encarnaras a un caballero que busca la redención en un limbo que toma la forma de un oscuro calabozo. Este mundo está plagado de monstruos, tienes un tiempo limitado para cumplir tu tarea, y las creaturas de la oscuridad intentarán entorpecer tu objetivo: rescatar a todos los gatos de la mazmorra antes de que el contador llegue a 0. En lugar de combatir con un arma, para sortear estos obstáculos deberás abrazar a tus enemigos para calmarlos y recuperar a los felinos. El juego combina tensión, drama, ternura y un sencillo mensaje sobre el cambio y la redención.</p>
+							<p data-key="ihne_desc2">Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Wrong Genre. Desarrollo activo.</p>
+						</div>
+					</div>	
+					<p></p>
+					<div class="row box">
+						<div class="col-5 col-12-medium">
+							<h3 data-key="my_roles">Mis Roles:</h3>
+							<ul>
+								<li data-key="role_pm">Project Manager</li>
+								<li data-key="role_sm">Scrum Master</li>
+								<li data-key="role_gm">Game Mechanics Developer</li>
+								<li data-key="role_ui">UI/UX Designer & Developer</li>
+								<li data-key="role_ld">Level Designer</li>
+							</ul>								
+						</div>
+						<div class="col-7 col-12-medium">
+							<h3 data-key="specific_tasks">Tareas Específicas:</h3>
+							<ul>
+								<li data-key="ihne_task1">Diseño y layout de nivel.</li>
+								<li data-key="ihne_task2">Integración y aplicación de Tilemaps.</li>
+								<li data-key="ihne_task3">Diseño e implementación de UI/UX.</li>
+								<li data-key="ihne_task4">Desarrollo de lógica de juego (lógica de victoria y derrota).</li>
+								<li data-key="ihne_task5">Implementación mecánica de contador de tiempo.</li>
+								<li data-key="ihne_task6">Implementación de contador global de colectibles.</li>
+								<li data-key="ihne_task7">Implementación efectos de postprocesamiento.</li>
+							</ul>								
+						</div>
+					</div>	
 				</div>
-			</footer>
+			</section>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const translations = {
+				es: {
+					nav_home: "Inicio", nav_contact: "Contacto", nav_newest: "Más Reciente", nav_oldest: "Más Antiguo",
+					view_itch: "Ver en Itch.io",
+					ihne_quote: "En vida, fuiste un caballero de muchos títulos: heraldo de sangre y guerra, asesino de ejércitos, decapitador de los antiguos reyes... y portador de pecados imperdonables. En el inevitable final de tu vida, San Pedro te condena a pasar la eternidad como viviste: una lucha eterna en el Limbo, pero sin tu amada espada. Al descender al mundo de los muertos, ves todo como una vasta mazmorra, no muy diferente de aquel lugar donde dejabas morir de hambre a tus prisioneros. Te cruzas con criaturas aterradoras, pero entre ellas percibes a un pequeño gato. La criatura te conmueve, impulsándote a rescatarlo. ¿Podría ser una prueba? ¿Una última oportunidad de redención? San Pedro te suplica: «Haz lo que en vida negaste». La respuesta es clara: en lugar de la perdición, debes reconciliarte con tus enemigos.",
+					ihne_desc1: "I Have No Enemies es un juego Top Down 2D de estilo pixelart en donde encarnaras a un caballero que busca la redención en un limbo que toma la forma de un oscuro calabozo. Este mundo está plagado de monstruos, tienes un tiempo limitado para cumplir tu tarea, y las creaturas de la oscuridad intentarán entorpecer tu objetivo: rescatar a todos los gatos de la mazmorra antes de que el contador llegue a 0. En lugar de combatir con un arma, para sortear estos obstáculos deberás abrazar a tus enemigos para calmarlos y recuperar a los felinos. El juego combina tensión, drama, ternura y un sencillo mensaje sobre el cambio y la redención.",
+					ihne_desc2: "Videojuego desarrollado con Unity 6.3. Desarrollado colaborativamente en el marco de la Game Jam Wrong Genre. Desarrollo activo.",
+					my_roles: "Mis Roles:", specific_tasks: "Tareas Específicas:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_gm: "Game Mechanics Developer", role_ui: "UI/UX Designer & Developer", role_ld: "Level Designer",
+					ihne_task1: "Diseño y layout de nivel.", ihne_task2: "Integración y aplicación de Tilemaps.", ihne_task3: "Diseño e implementación de UI/UX.", ihne_task4: "Desarrollo de lógica de juego (lógica de victoria y derrota).", ihne_task5: "Implementación mecánica de contador de tiempo.", ihne_task6: "Implementación de contador global de colectibles.", ihne_task7: "Implementación efectos de postprocesamiento."
+				},
+				en: {
+					nav_home: "Home", nav_contact: "Contact", nav_newest: "Newer", nav_oldest: "Older",
+					view_itch: "View on Itch.io",
+					ihne_quote: "In life, you were a knight of many titles: herald of blood and war, army slayer, beheader of ancient kings... and bearer of unforgivable sins. At the inevitable end of your life, Saint Peter condemns you to spend eternity as you lived: an eternal struggle in Limbo, but without your beloved sword. Upon descending into the world of the dead, you see everything as a vast dungeon, not unlike the place where you starved your prisoners. You come across terrifying creatures, but among them you notice a small cat. The creature moves you, prompting you to rescue it. Could this be a test? A last chance for redemption? Saint Peter begs you: 'Do what you denied in life.' The answer is clear: instead of perdition, you must reconcile with your enemies.",
+					ihne_desc1: "I Have No Enemies is a top-down 2D pixel art game where you embody a knight seeking redemption in a limbo that takes the form of a dark dungeon. This world is plagued by monsters, you have limited time to complete your task, and the creatures of darkness will try to hinder your goal: rescue all the cats from the dungeon before the counter reaches zero. Instead of fighting with a weapon, to overcome these obstacles you must embrace your enemies to calm them and recover the felines. The game combines tension, drama, tenderness, and a simple message about change and redemption.",
+					ihne_desc2: "Game developed with Unity 6.3. Collaboratively developed as part of the Wrong Genre Game Jam. Active development.",
+					my_roles: "My Roles:", specific_tasks: "Specific Tasks:",
+					role_pm: "Project Manager", role_sm: "Scrum Master", role_gm: "Game Mechanics Developer", role_ui: "UI/UX Designer & Developer", role_ld: "Level Designer",
+					ihne_task1: "Level design and layout.", ihne_task2: "Tilemap integration and application.", ihne_task3: "UI/UX design and implementation.", ihne_task4: "Game logic development (win/loss logic).", ihne_task5: "Timer mechanic implementation.", ihne_task6: "Global collectible counter implementation.", ihne_task7: "Post-processing effects implementation."
+				}
+			};
+
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function applyLanguage() {
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						el.innerText = translations[currentLang][key];
+					}
+				});
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+			}
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				applyLanguage();
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				applyLanguage();
+			});
+		</script>
 	</body>
 </html>

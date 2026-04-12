@@ -14,103 +14,135 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Danna Quimbay</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html#three">Contacto</a></li>
-						<li><a href="Ref1_SkellyEscape.html"class="active">Más Reciente</a></li>
-						<li><a href="Ref3_TaleOfTheBrokenSpell.html" class="active">Más Antiguo</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Danna Quimbay</a>
+			<nav>
+				<ul>
+					<li><a href="index.html" data-key="nav_home">Inicio</a></li>
+					<li><a href="index.html#three" data-key="nav_contact">Contacto</a></li>
+					<li><a href="Ref1_SkellyEscape.html" class="active" data-key="nav_newest">Más Reciente</a></li>
+					<li><a href="Ref3_TaleOfTheBrokenSpell.html" class="active" data-key="nav_oldest">Más Antiguo</a></li>
+					<li><button onclick="toggleLanguage()" id="langButton">English</button></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Penguin Panic</h1>
-							<span class="image fit"><img src="images/PenguinPanic_3.png" alt="" /></span>
-							<section class="inner">
-								<ul class="actions fit" >
-									<li><a href="https://donna99.itch.io/penguin-panic" download="QuimbayDanna_CV_2026v2" class="button">Ver en Itch.io</a></li>
-								</ul>
-							</section>
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<div class="row gtr-uniform"> 
-										<div class="col-12"><span class="image fit"><img src="images/PenguinPanic_2.png" alt="" /></span></div>
-										<div class="col-6"><span class="image fit"><img src="images/PenguinPanic_4.png" alt="" /></span></div>
-										<div class="col-6"><span class="image fit"><img src="images/PenguinPanic_1.png" alt="" /></span></div>
-										
-	
-									</div>
-								</div>
-								<div class="col-8 col-12-medium">
-									<blockquote>"¿Como llega un ave no voladora a una isla en el cielo? ¡Quien sabe! Ojalá se quede un rato; despues de todo, es una larga caida."</blockquote>
-									<p>Penguin Panic es un videojuego 3D que toma inspiración de juegos como Crash Bash y Mario Party. Aquí controlaras a un pingüino, tambaleandote para evitar caer al vacio.
-										Desafortunadamente, la isla es resbalosa, y tus vecinos no son muy amigables. 
-										Pero no desesperes, ocasionalmente recibirás poderes que te ayudarán (o no) en tu misión. Pero ten cuidado: tus oponentes tambián pueden usar estos objetos.
-										Trata de resistir la mayor cantidad de oleadas que puedas. 
-									</p>
-									<p>
-										Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.
-									</p>
-								</div>
-							</div>	
-							<p>	</p>
-							<div class="row">
-								<div class="col-5 col-12-medium">
-									<h3>Mis Roles:</h3>
-									<ul>
-										<li>Technical Artist/Animator</li>
-										<li>Gameplay Developer</li>
-										<li>UI/UX</li>
-										<li>Musica & SFX</li>
-									</ul>								
-								</div>
-								<div class="col-7 col-12-medium">
-									<h3>Tareas Específicas:</h3>
-									<ul>
-										<li>Implementación sistema de Audio Manager.</li>
-										<li>Implementación control de personaje.</li>
-										<li>Implementación IA de enemigos.</li>
-										<li>Sistema de Powerups dinámico (aplicable a jugador y enemigos, escalable).</li>
-										<li>Diseño e implementación de menús (Inicio y Pausa).</li>
-										<li>Diseño e implementación de animaciones con Spritemanager tipo 2.5D/Billboard .</li>
-										<li>Implementación temporizador.</li>
-										<li>Sistema de spawneo por oleadas.</li>
-										<li>Implementación de música y SFX.</li>
-										<li>Implementación VFX y efectos de postprocesamiento.</li>
-									</ul>								
-								</div>
-							</div>	
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+		<div id="wrapper">
+			<section id="main" class="wrapper">
 				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					<h1 class="major">Penguin Panic</h1>
+					<span class="image fit"><img src="images/PenguinPanic_3.png" alt="" /></span>
+					<section class="inner">
+						<ul class="actions fit">
+							<li><a href="https://donna99.itch.io/penguin-panic" class="button" data-key="view_itch">Ver en Itch.io</a></li>
+						</ul>
+					</section>
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<div class="row gtr-uniform"> 
+								<div class="col-12"><span class="image fit"><a href="images/PenguinPanic_2.png"><img src="images/PenguinPanic_2.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/PenguinPanic_4.png"><img src="images/PenguinPanic_4.png" alt="" /></a></span></div>
+								<div class="col-6"><span class="image fit"><a href="images/PenguinPanic_1.png"><img src="images/PenguinPanic_1.png" alt="" /></a></span></div>									
+							</div>
+						</div>
+						<div class="col-8 col-12-medium">
+							<blockquote data-key="penguin_quote">"¿Como llega un ave no voladora a una isla en el cielo? ¡Quien sabe! Ojalá se quede un rato; despues de todo, es una larga caida."</blockquote>
+							<p data-key="penguin_desc1">Penguin Panic es un videojuego 3D que toma inspiración de juegos como Crash Bash y Mario Party. Aquí controlaras a un pingüino, tambaleandote para evitar caer al vacio. Desafortunadamente, la isla es resbalosa, y tus vecinos no son muy amigables. Pero no desesperes, ocasionalmente recibirás poderes que te ayudarán (o no) en tu misión. Pero ten cuidado: tus oponentes tambián pueden usar estos objetos. Trata de resistir la mayor cantidad de oleadas que puedas.</p>
+							<p data-key="penguin_desc2">Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.</p>
+						</div>
+					</div>	
+					<p></p>
+					<div class="row box">
+						<div class="col-5 col-12-medium">
+							<h3 data-key="my_roles">Mis Roles:</h3>
+							<ul>
+								<li data-key="role_ta">Technical Artist/Animator</li>
+								<li data-key="role_gp">Gameplay Developer</li>
+								<li data-key="role_ui">UI/UX</li>
+								<li data-key="role_music">Música & SFX</li>
+							</ul>								
+						</div>
+						<div class="col-7 col-12-medium">
+							<h3 data-key="specific_tasks">Tareas Específicas:</h3>
+							<ul>
+								<li data-key="penguin_task1">Implementación sistema de Audio Manager.</li>
+								<li data-key="penguin_task2">Implementación control de personaje.</li>
+								<li data-key="penguin_task3">Implementación IA de enemigos.</li>
+								<li data-key="penguin_task4">Sistema de Powerups dinámico (aplicable a jugador y enemigos, escalable).</li>
+								<li data-key="penguin_task5">Diseño e implementación de menús (Inicio y Pausa).</li>
+								<li data-key="penguin_task6">Diseño e implementación de animaciones con Spritemanager tipo 2.5D/Billboard.</li>
+								<li data-key="penguin_task7">Implementación temporizador.</li>
+								<li data-key="penguin_task8">Sistema de spawneo por oleadas.</li>
+								<li data-key="penguin_task9">Implementación de música y SFX.</li>
+								<li data-key="penguin_task10">Implementación VFX y efectos de postprocesamiento.</li>
+							</ul>								
+						</div>
+					</div>	
 				</div>
-			</footer>
+			</section>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Danna Quimbay. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const translations = {
+				es: {
+					nav_home: "Inicio", nav_contact: "Contacto", nav_newest: "Más Reciente", nav_oldest: "Más Antiguo",
+					view_itch: "Ver en Itch.io",
+					penguin_quote: "¿Como llega un ave no voladora a una isla en el cielo? ¡Quien sabe! Ojalá se quede un rato; despues de todo, es una larga caida.",
+					penguin_desc1: "Penguin Panic es un videojuego 3D que toma inspiración de juegos como Crash Bash y Mario Party. Aquí controlaras a un pingüino, tambaleandote para evitar caer al vacio. Desafortunadamente, la isla es resbalosa, y tus vecinos no son muy amigables. Pero no desesperes, ocasionalmente recibirás poderes que te ayudarán (o no) en tu misión. Pero ten cuidado: tus oponentes tambián pueden usar estos objetos. Trata de resistir la mayor cantidad de oleadas que puedas.",
+					penguin_desc2: "Videojuego desarrollado con Unity 6.3. Assets propios diseñados en Krita. Desarrollo activo.",
+					my_roles: "Mis Roles:", specific_tasks: "Tareas Específicas:",
+					role_ta: "Technical Artist/Animator", role_gp: "Gameplay Developer", role_ui: "UI/UX", role_music: "Música & SFX",
+					penguin_task1: "Implementación sistema de Audio Manager.", penguin_task2: "Implementación control de personaje.", penguin_task3: "Implementación IA de enemigos.", penguin_task4: "Sistema de Powerups dinámico (aplicable a jugador y enemigos, escalable).", penguin_task5: "Diseño e implementación de menús (Inicio y Pausa).", penguin_task6: "Diseño e implementación de animaciones con Spritemanager tipo 2.5D/Billboard.", penguin_task7: "Implementación temporizador.", penguin_task8: "Sistema de spawneo por oleadas.", penguin_task9: "Implementación de música y SFX.", penguin_task10: "Implementación VFX y efectos de postprocesamiento."
+				},
+				en: {
+					nav_home: "Home", nav_contact: "Contact", nav_newest: "Newer", nav_oldest: "Older",
+					view_itch: "View on Itch.io",
+					penguin_quote: "How does a flightless bird get to an island in the sky? Who knows! Hopefully it stays for a while; after all, it's a long way down.",
+					penguin_desc1: "Penguin Panic is a 3D game inspired by games like Crash Bash and Mario Party. Here you control a penguin, wobbling to avoid falling into the void. Unfortunately, the island is slippery, and your neighbors aren't very friendly. But don't despair, you'll occasionally receive powers that will help (or not) you in your mission. But be careful: your opponents can also use these items. Try to survive as many waves as you can.",
+					penguin_desc2: "Game developed with Unity 6.3. Custom assets designed in Krita. Active development.",
+					my_roles: "My Roles:", specific_tasks: "Specific Tasks:",
+					role_ta: "Technical Artist/Animator", role_gp: "Gameplay Developer", role_ui: "UI/UX", role_music: "Music & SFX",
+					penguin_task1: "Audio Manager system implementation.", penguin_task2: "Character controller implementation.", penguin_task3: "Enemy AI implementation.", penguin_task4: "Dynamic Power-up system (applicable to player and enemies, scalable).", penguin_task5: "Menu design and implementation (Start and Pause).", penguin_task6: "Animation design and implementation with 2.5D/Billboard Sprite Manager.", penguin_task7: "Timer implementation.", penguin_task8: "Wave spawning system.", penguin_task9: "Music and SFX implementation.", penguin_task10: "VFX and post-processing effects implementation."
+				}
+			};
+
+			let currentLang = localStorage.getItem('preferredLang') || 'es';
+
+			function applyLanguage() {
+				document.querySelectorAll("[data-key]").forEach(el => {
+					const key = el.getAttribute("data-key");
+					if (translations[currentLang][key]) {
+						el.innerText = translations[currentLang][key];
+					}
+				});
+				document.getElementById("langButton").innerText = currentLang === 'es' ? 'English' : 'Español';
+			}
+
+			function toggleLanguage() {
+				currentLang = currentLang === 'es' ? 'en' : 'es';
+				localStorage.setItem('preferredLang', currentLang);
+				applyLanguage();
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				applyLanguage();
+			});
+		</script>
 	</body>
 </html>
